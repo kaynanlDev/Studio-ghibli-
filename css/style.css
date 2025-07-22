@@ -2,11 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'archivo', sans-serif;
 }
+
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
 }
+
 body {
   width: 100%;
   height: 100vh;
@@ -20,27 +23,96 @@ body {
   padding: 1.6rem 2.4rem;
 }
 
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.6rem 0;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem 0;
 }
 
-nav ul{
-    display: flex;
-    align-items: center;
-    gap: 2.4rem;
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
 }
 
-nav ul li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 4rem;
-    height: 4rem;
-    background-color: #ffffff1f;
-    border: 1px solid #fff;
-    border-radius: 100%;
-    cursor: pointer;
+nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: #ffffff1f;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+  opacity: 75%;
+}
+
+main .container {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.main-left h1 {
+  font-size: 6.2rem;
+  font-family: 'Andada pro', serif;
+  margin: 0.8rem 0 3.2rem 0;
+}
+
+.main-left p {
+  font-family: 'archivo', sans-serif;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.main-left .description {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  margin-bottom: 4.8rem;
+}
+
+.main-left .buttons {
+  display: flex;
+  gap: 3.2rem;
+
+}
+
+.main-left .buttons button {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  width: 24.0rem;
+  padding: 1rem 0rem;
+  background-color: #F1A5B1;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.main-left .buttons button:hover {
+  opacity: 75%;
+}
+
+.main-left .buttons .btn-right {
+  background-color: transparent;
+  border: 1px solid #F1A5B1;
+  color: #fff;
+}
+
+span {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  color: #fff;
 }
